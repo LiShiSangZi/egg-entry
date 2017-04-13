@@ -12,7 +12,12 @@
       "overwrite": true,
       "signed": true,
       "encode": "<Function encode>",
-      "decode": "<Function decode>"
+      "decode": "<Function decode>",
+      "store": {
+        "get": "<Function get>",
+        "set": "<Function set>",
+        "destroy": "<Function destroy>"
+      }
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -34,6 +39,7 @@
         "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-static/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-jsonp/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-view/config/locales",
+        "/Users/qijiang/Documents/polex/poc/egg-memcached/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-entry/lib/plugin/auth/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-entry/config/locales"
@@ -139,6 +145,9 @@
       "defaultViewEngine": "",
       "mapping": {}
     },
+    "sessionMem": {
+      "name": ""
+    },
     "env": "local",
     "name": "egg-entry",
     "keys": "<String len: 16>",
@@ -230,6 +239,15 @@
       "securities"
     ],
     "workerStartTimeout": 600000,
+    "session-memcached": {
+      "client": {
+        "host": "10.0.101.54",
+        "port": "11211",
+        "failOverServers": [
+          "10.0.101.54:11211"
+        ]
+      }
+    },
     "coreMiddlewares": [
       "meta",
       "siteFile",
@@ -397,6 +415,16 @@
       "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
       "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-view",
       "version": "1.1.0"
+    },
+    "memcached": {
+      "enable": true,
+      "path": "/Users/qijiang/Documents/polex/poc/egg-memcached",
+      "name": "memcached",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js",
+      "version": "1.0.0"
     },
     "auth": {
       "enable": true,

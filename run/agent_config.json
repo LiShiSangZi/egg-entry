@@ -111,9 +111,12 @@
       "defaultViewEngine": "",
       "mapping": {}
     },
+    "sessionMem": {
+      "name": ""
+    },
     "env": "local",
     "name": "egg-entry",
-    "keys": "<String len: 0>",
+    "keys": "<String len: 16>",
     "proxy": false,
     "protocolHeaders": "x-forwarded-proto",
     "ipHeaders": "x-forwarded-for",
@@ -127,7 +130,8 @@
         "dev": "egg-bin dev"
       },
       "dependencies": {
-        "egg": "^1.1.0"
+        "egg": "^1.1.0",
+        "egg-session": "^2.1.0"
       },
       "devDependencies": {
         "egg-bin": "^3.2.1"
@@ -196,6 +200,15 @@
       "bodyParser"
     ],
     "workerStartTimeout": 600000,
+    "session-memcached": {
+      "client": {
+        "host": "10.0.101.54",
+        "port": "11211",
+        "failOverServers": [
+          "10.0.101.54:11211"
+        ]
+      }
+    },
     "coreMiddlewares": [
       "meta",
       "siteFile",
@@ -224,7 +237,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
+      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js",
       "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-session",
       "version": "2.1.0"
     },
@@ -347,6 +360,25 @@
       "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
       "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-view",
       "version": "1.1.0"
+    },
+    "memcached": {
+      "enable": true,
+      "path": "/Users/qijiang/Documents/polex/poc/egg-memcached",
+      "name": "memcached",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js",
+      "version": "1.0.0"
+    },
+    "auth": {
+      "enable": true,
+      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/lib/plugin/auth",
+      "name": "auth",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js"
     }
   }
 }
