@@ -235,6 +235,7 @@
       "static",
       "bodyParser",
       "session",
+      "auth",
       "i18n",
       "securities"
     ],
@@ -255,6 +256,7 @@
       "static",
       "bodyParser",
       "session",
+      "auth",
       "i18n",
       "securities"
     ],
