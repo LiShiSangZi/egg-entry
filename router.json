@@ -4,5 +4,9 @@
     "ignoreAuth": true,
     "url": "/user/:id",
     "handler": "user.info"
+  }, {
+    "method": "get",
+    "url": "/setting/:setting",
+    "handler": "user.setting"
   }]
 }

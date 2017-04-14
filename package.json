@@ -10,6 +10,8 @@
     "egg": "^1.1.0",
     "egg-development-proxyworker": "^0.2.1",
     "egg-session": "^2.1.0",
+    "egg-session-memcached": "^1.0.2",
+    "glob": "^7.1.1",
     "path-to-regexp": "^1.7.0"
   },
   "devDependencies": {

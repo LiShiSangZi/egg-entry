@@ -9,12 +9,16 @@ exports.proxyworker = {
   package: 'egg-development-proxyworker',
 };
 
-exports.memcached = {
+exports['session-memcached'] = {
   enable: true,
-  path: path.join(__dirname, '../../egg-memcached'),
-}
+  package: 'egg-session-memcached'
+};
 
 exports.auth = {
   enable: true,
   path: path.join(__dirname, '../lib/plugin/auth'),
+};
+
+exports.security = {
+  enable: false
 };
