@@ -39,6 +39,7 @@
         "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-static/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-jsonp/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-view/config/locales",
+        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-development-proxyworker/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-memcached/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-entry/lib/plugin/auth/config/locales",
         "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/locales",
@@ -145,6 +146,9 @@
       "defaultViewEngine": "",
       "mapping": {}
     },
+    "proxyworker": {
+      "port": 10086
+    },
     "sessionMem": {
       "name": ""
     },
@@ -165,7 +169,9 @@
       },
       "dependencies": {
         "egg": "^1.1.0",
-        "egg-session": "^2.1.0"
+        "egg-development-proxyworker": "^0.2.1",
+        "egg-session": "^2.1.0",
+        "path-to-regexp": "^1.7.0"
       },
       "devDependencies": {
         "egg-bin": "^3.2.1"
@@ -417,6 +423,19 @@
       "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
       "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-view",
       "version": "1.1.0"
+    },
+    "proxyworker": {
+      "enable": true,
+      "package": "egg-development-proxyworker",
+      "name": "proxyworker",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [
+        "local"
+      ],
+      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js",
+      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-development-proxyworker",
+      "version": "0.2.1"
     },
     "memcached": {
       "enable": true,

@@ -1,0 +1,8 @@
+{
+  "routers": [{
+    "method": "get",
+    "ignoreAuth": true,
+    "url": "/user/:id",
+    "handler": "user.info"
+  }]
+}

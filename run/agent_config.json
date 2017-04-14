@@ -131,7 +131,8 @@
       },
       "dependencies": {
         "egg": "^1.1.0",
-        "egg-session": "^2.1.0"
+        "egg-session": "^2.1.0",
+        "path-to-regexp": "^1.7.0"
       },
       "devDependencies": {
         "egg-bin": "^3.2.1"

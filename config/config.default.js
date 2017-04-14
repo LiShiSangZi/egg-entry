@@ -9,3 +9,7 @@ exports['session-memcached'] = {
     failOverServers: ['10.0.101.54:11211']
   }
 };
+
+exports.proxyworker = {
+  port: 10086,
+};
