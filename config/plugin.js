@@ -14,6 +14,11 @@ exports['session-memcached'] = {
   package: 'egg-session-memcached'
 };
 
+// exports.validate = {
+//   enable: true,
+//   package: 'egg-async-validator',
+// };
+
 exports.auth = {
   enable: true,
   path: path.join(__dirname, '../lib/plugin/auth'),

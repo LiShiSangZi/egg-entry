@@ -122,7 +122,8 @@
         "egg-session": "^2.1.0",
         "egg-session-memcached": "^1.0.2",
         "glob": "^7.1.1",
-        "path-to-regexp": "^1.7.0"
+        "path-to-regexp": "^1.7.0",
+        "superagent": "^3.5.2"
       },
       "devDependencies": {
         "egg-bin": "^3.2.1"
@@ -204,6 +205,10 @@
           "10.0.101.54:11211"
         ]
       }
+    },
+    "auth": {
+      "keystone": "http://10.0.101.54:5000",
+      "domain": "Default"
     },
     "coreMiddlewares": [
       "meta",

@@ -1,0 +1,6 @@
+{
+  "name": "egg-endpoints",
+  "eggPlugin": {
+    "name": "endpoints"
+  }
+}
