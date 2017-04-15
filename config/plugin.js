@@ -24,6 +24,11 @@ exports.auth = {
   path: path.join(__dirname, '../lib/plugin/auth'),
 };
 
+exports.keystone = {
+  enable: true,
+  path: path.join(__dirname, '../lib/plugin/keystone'),
+}
+
 exports.security = {
   enable: false
 };

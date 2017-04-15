@@ -1,6 +1,7 @@
 {
   "name": "egg-auth",
   "eggPlugin": {
-    "name": "auth"
+    "name": "auth",
+    "dep": ["keystone"]
   }
 }
