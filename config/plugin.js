@@ -24,9 +24,9 @@ exports.auth = {
   path: path.join(__dirname, '../lib/plugin/auth'),
 };
 
-exports.keystone = {
+exports.openstack = {
   enable: true,
-  path: path.join(__dirname, '../lib/plugin/keystone'),
+  path: path.join(__dirname, '../lib/plugin/openstack'),
 }
 
 exports.security = {

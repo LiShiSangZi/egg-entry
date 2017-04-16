@@ -1,0 +1,6 @@
+{
+  "name": "egg-openstack",
+  "eggPlugin": {
+    "name": "openstack"
+  }
+}

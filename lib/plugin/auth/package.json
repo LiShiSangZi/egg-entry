@@ -2,6 +2,6 @@
   "name": "egg-auth",
   "eggPlugin": {
     "name": "auth",
-    "dep": ["keystone"]
+    "dep": ["openstack"]
   }
 }
