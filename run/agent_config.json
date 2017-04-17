@@ -77,7 +77,6 @@
     "sessionMem": {
       "name": ""
     },
-    "validate": {},
     "env": "local",
     "name": "egg-entry",
     "keys": "<String len: 16>",
@@ -293,7 +292,7 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/config/plugin.js",
       "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-static",
       "version": "1.3.0"
     },
@@ -344,17 +343,6 @@
       "from": "/Users/s/Documents/code/egg-poc/egg-entry/config/plugin.js",
       "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-session-memcached",
       "version": "1.0.2"
-    },
-    "validate": {
-      "enable": true,
-      "package": "egg-async-validator",
-      "name": "validate",
-      "dependencies": [],
-      "optionalDependencies": [],
-      "env": [],
-      "from": "/Users/s/Documents/code/egg-poc/egg-entry/config/plugin.js",
-      "path": "/Users/s/Documents/code/egg-poc/egg-async-validator",
-      "version": "1.0.0"
     },
     "openstack": {
       "enable": true,
