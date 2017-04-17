@@ -15,11 +15,6 @@ exports['session-memcached'] = {
   package: 'egg-session-memcached'
 };
 
-// exports.validate = {
-//   enable: true,
-//   package: 'egg-async-validator',
-// };
-
 const files = glob.sync('plugin/**/app/public', {
   cwd: path.join(__dirname, '..', 'lib'),
 });
