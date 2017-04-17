@@ -24,12 +24,10 @@ const files = glob.sync('plugin/**/app/public', {
   cwd: path.join(__dirname, '..', 'lib'),
 });
 
-exports.static = {
-  prefix: '/public/',
-  dir: files.map(file => path.join(__dirname, '..', 'lib', file)),
-};
-
-console.log(files.map(file => path.join(__dirname, '..', 'lib', file)));
+// exports.static = {
+//   prefix: '/public/',
+//   dir: files.map(file => path.join(__dirname, '..', 'lib', file)),
+// };
 
 
 exports.auth = {
