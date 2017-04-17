@@ -21,36 +21,37 @@
     },
     "i18n": {
       "defaultLocale": "en_US",
-      "dir": "/Users/qijiang/Documents/polex/poc/egg-entry/config/locales",
+      "dir": "/Users/s/Documents/code/egg-poc/egg-entry/config/locales",
       "queryField": "locale",
       "cookieField": "locale",
       "cookieMaxAge": "1y",
       "functionName": "__",
       "dirs": [
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-onerror/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-session/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-i18n/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-watcher/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-multipart/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-development/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-schedule/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-logrotator/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-static/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-jsonp/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-view/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-development-proxyworker/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-session-memcached/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/lib/plugin/openstack/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/lib/plugin/auth/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/locales",
-        "/Users/qijiang/Documents/polex/poc/egg-entry/config/locales"
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-onerror/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-session/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-i18n/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-watcher/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-multipart/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-development/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-schedule/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-logrotator/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-static/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-jsonp/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-view/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-development-proxyworker/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-session-memcached/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-async-validator/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/lib/plugin/openstack/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/lib/plugin/auth/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/locales",
+        "/Users/s/Documents/code/egg-poc/egg-entry/config/locales"
       ]
     },
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "multipart": {
@@ -65,9 +66,13 @@
       "whitelist": null
     },
     "development": {
-      "watchDirs": [],
+      "watchDirs": [
+        "../lib/plugin",
+        "../../egg-async-validator/app"
+      ],
       "ignoreDirs": [],
-      "fastReady": true
+      "fastReady": true,
+      "enable": true
     },
     "logrotator": {
       "filesRotateByHour": null,
@@ -79,7 +84,7 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/qijiang/Documents/polex/poc/egg-entry/app/public",
+      "dir": "/Users/s/Documents/code/egg-poc/egg-entry/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false
@@ -90,7 +95,7 @@
       "csrf": false
     },
     "view": {
-      "root": "/Users/qijiang/Documents/polex/poc/egg-entry/app/view",
+      "root": "/Users/s/Documents/code/egg-poc/egg-entry/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -102,6 +107,7 @@
     "sessionMem": {
       "name": ""
     },
+    "validate": {},
     "env": "local",
     "name": "egg-entry",
     "keys": "<String len: 16>",
@@ -130,9 +136,9 @@
         "egg-bin": "^3.2.1"
       }
     },
-    "baseDir": "/Users/qijiang/Documents/polex/poc/egg-entry",
-    "HOME": "/Users/qijiang",
-    "rundir": "/Users/qijiang/Documents/polex/poc/egg-entry/run",
+    "baseDir": "/Users/s/Documents/code/egg-poc/egg-entry",
+    "HOME": "/Users/s",
+    "rundir": "/Users/s/Documents/code/egg-poc/egg-entry/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -163,7 +169,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "/Users/qijiang/Documents/polex/poc/egg-entry/logs/egg-entry",
+      "dir": "/Users/s/Documents/code/egg-poc/egg-entry/logs/egg-entry",
       "encoding": "utf8",
       "env": "local",
       "level": "DEBUG",
@@ -244,8 +250,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-onerror",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-onerror",
       "version": "1.3.0"
     },
     "session": {
@@ -255,8 +261,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-session",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-session",
       "version": "2.1.0"
     },
     "i18n": {
@@ -266,8 +272,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-i18n",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-i18n",
       "version": "1.1.0"
     },
     "watcher": {
@@ -277,8 +283,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-watcher",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-watcher",
       "version": "2.1.0"
     },
     "multipart": {
@@ -288,8 +294,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-multipart",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-multipart",
       "version": "1.2.0"
     },
     "development": {
@@ -303,8 +309,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-development",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-development",
       "version": "1.2.0"
     },
     "schedule": {
@@ -314,8 +320,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-schedule",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-schedule",
       "version": "2.3.0"
     },
     "logrotator": {
@@ -327,8 +333,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-logrotator",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-logrotator",
       "version": "2.2.2"
     },
     "static": {
@@ -338,8 +344,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-static",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-static",
       "version": "1.3.0"
     },
     "jsonp": {
@@ -351,8 +357,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-jsonp",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-jsonp",
       "version": "1.0.0"
     },
     "view": {
@@ -362,8 +368,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-view",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-view",
       "version": "1.1.0"
     },
     "proxyworker": {
@@ -375,8 +381,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-development-proxyworker",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-development-proxyworker",
       "version": "0.2.1"
     },
     "session-memcached": {
@@ -386,29 +392,40 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js",
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/node_modules/egg-session-memcached",
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/node_modules/egg-session-memcached",
       "version": "1.0.2"
+    },
+    "validate": {
+      "enable": true,
+      "package": "egg-async-validator",
+      "name": "validate",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/config/plugin.js",
+      "path": "/Users/s/Documents/code/egg-poc/egg-async-validator",
+      "version": "1.0.0"
     },
     "openstack": {
       "enable": true,
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/lib/plugin/openstack",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/lib/plugin/openstack",
       "name": "openstack",
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js"
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/config/plugin.js"
     },
     "auth": {
       "enable": true,
-      "path": "/Users/qijiang/Documents/polex/poc/egg-entry/lib/plugin/auth",
+      "path": "/Users/s/Documents/code/egg-poc/egg-entry/lib/plugin/auth",
       "name": "auth",
       "dependencies": [
         "openstack"
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/qijiang/Documents/polex/poc/egg-entry/config/plugin.js"
+      "from": "/Users/s/Documents/code/egg-poc/egg-entry/config/plugin.js"
     }
   }
 }

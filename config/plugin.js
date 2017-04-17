@@ -14,10 +14,10 @@ exports['session-memcached'] = {
   package: 'egg-session-memcached'
 };
 
-// exports.validate = {
-//   enable: true,
-//   package: 'egg-async-validator',
-// };
+exports.validate = {
+  enable: true,
+  package: 'egg-async-validator',
+};
 
 exports.auth = {
   enable: true,

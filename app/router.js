@@ -22,6 +22,9 @@ function functionToMiddleware(func) {
 }
 
 module.exports = app => {
+
+  app.get('/user/:id', 'user.info');
+  app.addIgnoreList('/user/:id');
   
   const pluginPath = path.join(__dirname, '..', 'lib', 'plugin');
   const res = glob.sync('**/app/router.js', {
