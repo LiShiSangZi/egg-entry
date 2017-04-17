@@ -37,8 +37,7 @@
     },
     "development": {
       "watchDirs": [
-        "../lib/plugin",
-        "../../egg-async-validator/app"
+        "lib/plugin"
       ],
       "ignoreDirs": [],
       "fastReady": true,
@@ -54,9 +53,7 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": [
-        "/Users/s/Documents/code/egg-poc/egg-entry/lib/plugin/openstack/app/public"
-      ],
+      "dir": [],
       "dynamic": true,
       "preload": false,
       "buffer": false,

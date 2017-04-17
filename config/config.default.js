@@ -18,19 +18,17 @@ exports.proxyworker = {
 };
 
 // TODO: Move this to CDN when deployed.
-const paths = glob.sync('**/app/public', {
-  cwd: path.join(__dirname, '../lib/plugin')
-}).map(fold => path.join(__dirname, '../lib/plugin', fold));
 
 exports.static = {
   enable: true,
-  dir: paths
+  dir: glob.sync('**/app/public', {
+    cwd: path.join(__dirname, '../lib/plugin')
+  }).map(fold => path.join(__dirname, '../lib/plugin', fold))
 };
 // END OF TODO.
-
 exports.development = {
   enable: true,
-  watchDirs: ['../lib/plugin', '../../egg-async-validator/app'],
+  watchDirs: ['lib/plugin'],
 };
 
 exports.auth = {
